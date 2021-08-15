@@ -171,6 +171,8 @@ h1 {
     background-color: white;
     border-radius: 20px;
     box-shadow: -4px 3px 19px 2px var(--quaternary-color);
+    padding-top: 1vh;
+    padding-bottom: 2vh;
 }
 
 .result-style {

@@ -14,6 +14,7 @@ function sumOfAngles(event) {
 
   if (!angleOneInput.value || !angleTwoInput.value || !angleThreeInput.value) {
       alert("Angle field can't be empty.\nPlease enter valid angles.")
+      return
   }
 
   var angleOne = parseFloat(angleOneInput.value)
@@ -22,6 +23,7 @@ function sumOfAngles(event) {
   
   if ((angleOne === 0) || (angleTwo === 0) || (angleThree === 0)) {
       alert("Angle of a triangle can't be ZERO! \n If it's zero, it'll be a forming a straight line")
+      return
   }
 
   var sum = angleOne + angleTwo + angleThree
