@@ -12,6 +12,7 @@ function calculateHypotenuse(event) {
 
     if (!legOneInput.value || !legTwoInput.value) {
         alert("No fields can be left empty! Fill in all the fields :)")
+        return
     }
 
     legOne = parseFloat(legOneInput.value)
@@ -22,6 +23,7 @@ function calculateHypotenuse(event) {
 
     if ((legOne === 0) || (legTwo === 0)) {
         alert("No side can be be 0! Please enter valid inputs :)")
+        return
     }
 
     var hypotenuse = (Math.sqrt(legOne ** 2 + legTwo ** 2)).toFixed(3)
