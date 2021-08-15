@@ -63,7 +63,7 @@ h1 {
 
 #main-display {
     margin: auto;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     width: 60vw;
     text-align: center;
     background-color: white;
@@ -247,4 +247,29 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.footer,
+i {
+  color: var(--tertiary-color);
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 5vh;
+  margin-right: 0.6vw;
+  margin-left: 0.6vw;
+}
+
+.github-repo {
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.github-repo-link {
+  color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.redirect {
+    font-size: 1rem;
 }
