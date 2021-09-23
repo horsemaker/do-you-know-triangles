@@ -28,15 +28,16 @@ function setQuestionRoundOne() {
     }
   }
 
-  question.textContent = 'If a triangle has angles ' +
-  angle1 +
-  '°, ' +
-  angle2 +
-  '°, ' +
-  angle3 +
-  '°. Is it an ' +
-  (whichTriangle === 1 ? 'obtuse' : whichTriangle === 2 ? 'acute' : 'right') +
-  ' triangle? '
+  question.textContent =
+    'If a triangle has angles ' +
+    angle1 +
+    '°, ' +
+    angle2 +
+    '°, ' +
+    angle3 +
+    '°. Is it an ' +
+    (whichTriangle === 1 ? 'obtuse' : whichTriangle === 2 ? 'acute' : 'right') +
+    ' triangle? '
 
   return (
     'If a triangle has angles ' +
@@ -73,17 +74,17 @@ function giveAnswerRoundOne() {
 }
 
 function roundOne(event) {
-    event.preventDefault()
+  event.preventDefault()
   for (var i = 0; i < 10; i++) {
     var questions = {
       question: setQuestionRoundOne(),
       answer: giveAnswerRoundOne(),
     }
     // var userAnswer = readlineSync.question(questions.question)
-    for(i = 0; i < ele.length; i++) {
-        if(ele[i].checked) {
-            var userAnswer = ele[i].value
-        }
+    for (i = 0; i < ele.length; i++) {
+      if (ele[i].checked) {
+        var userAnswer = ele[i].value
+      }
     }
 
     if (userAnswer.toUpperCase() === questions.answer.toUpperCase()) {
